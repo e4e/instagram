@@ -425,15 +425,23 @@
 
 
 
-    <h1 id="sandbox-mode">Sandbox Mode</h1>
-<p>Every new app created on the Instagram Platform starts in Sandbox mode. This is a fully functional environment that allows you to test publicly available API endpoints before you submit your app for review. Sandbox mode is ideal for developers who are new to the Instagram Platform and want to explore the API Platform, as well as for teams that need multiple clients for development, staging, and other non-live environments.</p>
-<p>To help you develop and test your app, the users and media available in Sandbox mode are real Instagram data (i.e. what is normally visible in the Instagram app), but with the following conditions:</p>
+    <h1 id="sandbox-mode">Sandboxモード</h1>
+<p>Instagramプラットフォームで作成されるすべてのアプリは初期状態ではSandboxモードとなります。これはアプリをレビューに提出する前に、すべての公開されているAPIをテストできる環境です。
+  Sandboxモードは、Instagramプラットフォームに触れるのが初めてでAPIプラットフォームを試してみたい開発者や、開発環境・ステージング環境、あるいは他の非公開環境など複数のクライアントを必要とするチームにも最適です。
+</p>
+<p>
+  アプリの開発とテストを容易にするために、Sandboxモードで利用可能なユーザーやメディアデータは、すべて本当のInstagramのデータとなっています（つまり、Instagramアプリで実際に見れるデータと同じものです）。ただし、以下の制約がつきます：
+</p>
 <ul>
-<li>Apps in sandbox are restricted to 10 users</li>
-<li>Data is restricted to the 10 users and the 20 most recent media from each of those users</li>
-<li>Reduced API <a href="https://www.instagram.com/developer/limits/">rate limits</a></li>
+<li>Sandboxモードのアプリは、10ユーザーまでに限られます</li>
+<li> ユーザーデータの取得は10件までに限られ、またメディアデータの取得はそれぞれのユーザーの最新20件までに限られます。 </li>
+<li>APIの<a href="https://www.instagram.com/developer/limits/">利用上限</a>が通常より制限されます</li>
 </ul>
-<p>The next section will explain these conditions in more detail and how you can leverage Sandbox Mode to build and test your app before submitting for Live Mode. Once your app is ready to go live and be accessed beyond the restricted users, you will need to submit it for review. Upon approval, your app can be accessed and used by any Instagram user choosing to authenticate.</p>
+<p>
+  次のセクションでは、これらの制限をより詳細に説明し、どうやってSandboxモードを活用してアプリをレビュー提出前にテストするかを説明します。
+  アプリの開発が完了し、制限を超えるユーザーからのアクセスがあった場合、アプリをレビューに提出する必要があります。
+  レビューが承認されると、アプリは認証済みのすべてのInstagramユーザーから利用可能となります。
+</p>
 <blockquote>
 <h2 id="important">Important</h2>
 <p>Apps created on or after Nov 17, 2015 can take advantage of Sandbox mode right away.

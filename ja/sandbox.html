@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://www.instagram.com/developer/sandbox/ -->
+<html lang="ja" class="js not-logged-in wf-proximanova-n4-active wf-proximanova-n7-active wf-proximanova-n3-active wf-proximanova-n6-active wf-active"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <script async="" src="./sandbox_files/fbevents.js"></script><script type="text/javascript">window._timings = {"domLoading": Date.now()}</script>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>Sandbox Mode • Instagram Developer Documentation</title>
+
+        <script type="text/javascript">
+  WebFontConfig = {
+    custom: {
+      families: ['proxima-nova:n3,n4,n6,n7'],
+    }
+  };
+</script>
+<script src="./sandbox_files/webfont.js" type="text/javascript" async=""></script>
+
+<style type="text/css">
+  /* @license
+   * MyFonts Webfont Build ID 2164953, 2012-03-23T23:06:30-0400
+   *
+   * The fonts listed in this notice are subject to the End User License
+   * Agreement(s) entered into by the website owner. All other parties are
+   * explicitly restricted from using the Licensed Webfonts(s).
+   *
+   * You may obtain a valid license at the URLs below.
+   *
+   *
+   * Webfont: Proxima Nova Light by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/light/
+   * Licensed pageviews: unlimited
+   *
+   * Webfont: Proxima Nova Regular by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular/
+   * Licensed pageviews: unlimited
+   *
+   * Webfont: Proxima Nova Semibold by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/semibold/
+   * Licensed pageviews: unlimited
+   *
+   * Webfont: Proxima Nova Bold Italic by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold-it/
+   * Licensed pageviews: unlimited
+   *
+   * Webfont: Proxima Nova Bold by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/bold/
+   * Licensed pageviews: unlimited
+   *
+   * Webfont: Proxima Nova Italic by Mark Simonson
+   * URL: http://www.myfonts.com/fonts/marksimonson/proxima-nova/regular-it/
+   * Licensed pageviews: unlimited
+   *
+   *
+   * License: http://www.myfonts.com/viewlicense?type=web&buildid=2164953
+   * Webfonts copyright: Copyright (c) Mark Simonson, 2005. All rights reserved.
+   *
+   * (c) 2012 Bitstream Inc
+   */
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url(' //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-bold-webfont.eot');
+    src: url(' //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-bold-webfont.eot?#iefix') format("embedded-opentype"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-bold-webfont.woff') format("woff"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-bold-webfont.ttf') format("truetype"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-bold-webfont.svg#ProximaNovaBold') format("svg");
+    font-weight: bold;
+    font-style: normal; }
+
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url(' //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-boldit-webfont.eot');
+    src: url(' //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-boldit-webfont.eot?#iefix') format("embedded-opentype"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-boldit-webfont.woff') format("woff"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-boldit-webfont.ttf') format("truetype"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-boldit-webfont.svg#ProximaNovaBoldItalic') format("svg");
+    font-weight: bold;
+    font-style: italic; }
+
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url(' //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-reg-webfont.eot');
+    src: url(' //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-reg-webfont.eot?#iefix') format("embedded-opentype"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-reg-webfont.woff') format("woff"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-reg-webfont.ttf') format("truetype"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-reg-webfont.svg#ProximaNovaRegular') format("svg");
+    font-weight: normal;
+    font-style: normal; }
+
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url(' //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-regit-webfont.eot');
+    src: url(' //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-regit-webfont.eot?#iefix') format("embedded-opentype"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-regit-webfont.woff') format("woff"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-regit-webfont.ttf') format("truetype"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-regit-webfont.svg#ProximaNovaRegularItalic') format("svg");
+    font-weight: normal;
+    font-style: italic; }
+
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url(' //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-sbold-webfont.eot');
+    src: url(' //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-sbold-webfont.eot?#iefix') format("embedded-opentype"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-sbold-webfont.woff') format("woff"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-sbold-webfont.ttf') format("truetype"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-sbold-webfont.svg#ProximaNovaSemibold') format("svg");
+    font-weight: 600;
+    font-style: normal; }
+</style>
+
+  <style type="text/css">
+  @font-face {
+    font-family: 'proxima-nova';
+    src: url(' //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-light-webfont.eot');
+    src: url(' //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-light-webfont.eot?#iefix') format("embedded-opentype"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-light-webfont.woff') format("woff"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-light-webfont.ttf') format("truetype"),
+      url(' //instagramstatic-a.akamaihd.net/bluebar/07a863f/webfonts/proximanova-light-webfont.svg#ProximaNovaLight') format("svg");
+    font-weight: 300;
+    font-style: normal; }
+</style>
+
+
+
+
+        <meta name="robots" content="noimageindex">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+
+    <meta id="viewport" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+
+        <script type="text/javascript">
+        (function() {
+            var docElement = document.documentElement;
+            var classRE = new RegExp('(^|\\s)no-js(\\s|$)');
+            var className = docElement.className;
+            docElement.className = className.replace(classRE, '$1js$2');
+        })();
+        </script>
+
+
+
+
+        <link rel="Shortcut Icon" type="image/x-icon" href="https://instagramstatic-a.akamaihd.net/bluebar/07a863f/images/ico/favicon.ico"><link rel="mask-icon" href="https://instagramstatic-a.akamaihd.net/bluebar/07a863f/images/ico/favicon.svg" color="#125688">
+
+
+        <link rel="apple-touch-icon-precomposed" href="https://instagramstatic-a.akamaihd.net/bluebar/07a863f/images/ico/apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://instagramstatic-a.akamaihd.net/bluebar/07a863f/images/ico/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://instagramstatic-a.akamaihd.net/bluebar/07a863f/images/ico/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://instagramstatic-a.akamaihd.net/bluebar/07a863f/images/ico/apple-touch-icon-144x144-precomposed.png">
+
+
+    <link href="./sandbox_files/developer-main.css" type="text/css" rel="stylesheet">
+
+
+
+
+    <script src="./sandbox_files/jquery.js" type="text/javascript"></script>
+    <script src="./sandbox_files/bluebar.js" type="text/javascript"></script>
+    <script src="./sandbox_files/navigation.js" type="text/javascript"></script>
+
+<script>
+  $(document).ready(function() {
+    $('#top_bar_right .top-bar-actions').prepend("<li class='manage-clients link-settings'><a class='' href='/developer/clients/manage/'>Manage Clients<i></i></a></li>");
+
+    $('#top_bar_right .top-bar-actions').prepend("<li class='testing-clients link-settings'><a class='' href='/developer/clients/sandbox_invites/'>Sandbox Invites<i></i></a></li>");
+
+  });
+</script>
+
+
+    <style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+    <body class="sidebar-page">
+
+
+        <div class="root">
+
+            <div class="page">
+
+
+                        <header class="top-bar">
+            <div class="wrapper">
+                <hgroup>
+                    <div class="logo"><a href="https://www.instagram.com/">Instagram</a></div>
+
+                </hgroup>
+
+
+
+                <div class="top-bar-right account-state" id="top_bar_right">
+                    <ul class="top-bar-actions" id="top_bar_actions"><li class="testing-clients link-settings"><a class="" href="https://www.instagram.com/developer/clients/sandbox_invites/">Sandbox Invites<i></i></a></li><li class="manage-clients link-settings"><a class="" href="https://www.instagram.com/developer/clients/manage/">Manage Clients<i></i></a></li>
+
+                        <li id="link_profile" class="link-signin">
+                                <a href="https://www.instagram.com/accounts/login/?next=/developer/sandbox/">
+                                <i></i>
+                                <strong>ログイン</strong>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </header> <!-- .top-bar -->
+
+
+
+
+    <div class="sidebar">
+        <div class="wrapper">
+            <nav class="sidebar-nav">
+                <div class="sidebar-content">
+
+
+
+
+<form class="quick-search" action="https://www.instagram.com/developer/search/" method="GET">
+    <a href="https://www.instagram.com/developer/sandbox/#" class="disclosure-down"></a>
+    <input name="q" type="text" placeholder="Search Documentation">
+    <input type="submit">
+</form>
+
+<ul>
+    <li>
+        <a href="https://www.instagram.com/developer/">
+
+            Overview
+
+            <i class="disclosure"></i>
+
+        </a>
+
+    </li>
+    <li>
+        <a href="https://www.instagram.com/developer/authentication/">
+
+            Authentication
+
+            <i class="disclosure"></i>
+
+        </a>
+
+    </li>
+    <li>
+        <a href="https://www.instagram.com/developer/authorization/">
+
+            Login Permissions
+
+            <i class="disclosure"></i>
+
+        </a>
+
+    </li>
+    <li>
+        <a href="https://www.instagram.com/developer/review/">
+
+            Permissions Review
+
+            <i class="disclosure"></i>
+
+        </a>
+
+    </li>
+    <li class="active">
+        <a href="./sandbox_files/sandbox.html">
+
+            Sandbox Mode
+
+            <i class="disclosure"></i>
+
+        </a>
+
+    </li>
+    <li>
+        <a href="https://www.instagram.com/developer/secure-api-requests/">
+
+            Secure Requests
+
+            <i class="disclosure"></i>
+
+        </a>
+
+    </li>
+    <li>
+        <a href="https://www.instagram.com/developer/endpoints/">
+
+            Endpoints
+
+            <i class="disclosure"></i>
+
+        </a>
+
+
+
+    </li>
+    <li>
+        <a href="https://www.instagram.com/developer/limits/">
+
+            Rate Limits
+
+            <i class="disclosure"></i>
+
+        </a>
+
+    </li>
+    <li>
+        <a href="https://www.instagram.com/developer/subscriptions/">
+
+            Subscriptions
+
+            <i class="disclosure"></i>
+
+        </a>
+
+    </li>
+    <li>
+        <a href="https://www.instagram.com/developer/embedding/">
+
+            Embedding
+
+            <i class="disclosure"></i>
+
+        </a>
+
+    </li>
+    <li>
+        <a href="https://www.instagram.com/developer/mobile-sharing/">
+
+            Mobile Sharing
+
+            <i class="disclosure"></i>
+
+        </a>
+
+
+
+    </li>
+    <li>
+        <a href="https://www.instagram.com/developer/libraries/">
+
+            Libraries
+
+            <i class="disclosure"></i>
+
+        </a>
+
+    </li>
+    <li>
+        <a href="https://www.instagram.com/developer/support/">
+
+            Support
+
+            <i class="disclosure"></i>
+
+        </a>
+
+    </li>
+    <li>
+        <a href="https://www.instagram.com/developer/changelog/">
+
+            Changelog
+
+            <i class="disclosure"></i>
+
+        </a>
+
+    </li>
+    <li>
+        <a href="https://www.instagram.com/about/legal/terms/api/">
+
+            Platform Policy
+
+            <i class="disclosure"></i>
+
+        </a>
+
+    </li>
+</ul>
+
+
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="main">
+        <div class="wrapper">
+            <section class="nav-page-content" role="main">
+
+
+
+
+
+<div id="alerts" class="alerts">
+
+
+
+
+    <p class="alert-blue"><b>Instagramプラットフォームとドキュメントの変更</b>2015年11月17日以降に作成されたアプリは、初期状態ではSandboxモードとなり、新しいAPI制限の対象となります。
+      これらのアプリは、公開されて開発者以外の人がアプリを利用できるようになる前に、新しいレビュープロセスを通過する必要があります。
+      詳細は<a href="https://www.instagram.com/developer/">APIドキュメント</a>または<a href="https://www.instagram.com/developer/changelog/">Change Log</a>を確認してください。<br><br>
+      2015年11月17日以前に作成されたアプリは、2016年6月まで機能します。2016年6月以降、これらのアプリもレビューを通過しないと自動的にSandboxモードになります。
+      以前のバージョンのドキュメントは、<a href="https://www.instagram.com/developer/deprecated/">こちら</a>で引き続き確認できます。</p>
+
+
+</div>
+
+
+
+
+    <h1 id="sandbox-mode">Sandbox Mode</h1>
+<p>Every new app created on the Instagram Platform starts in Sandbox mode. This is a fully functional environment that allows you to test publicly available API endpoints before you submit your app for review. Sandbox mode is ideal for developers who are new to the Instagram Platform and want to explore the API Platform, as well as for teams that need multiple clients for development, staging, and other non-live environments.</p>
+<p>To help you develop and test your app, the users and media available in Sandbox mode are real Instagram data (i.e. what is normally visible in the Instagram app), but with the following conditions:</p>
+<ul>
+<li>Apps in sandbox are restricted to 10 users</li>
+<li>Data is restricted to the 10 users and the 20 most recent media from each of those users</li>
+<li>Reduced API <a href="https://www.instagram.com/developer/limits/">rate limits</a></li>
+</ul>
+<p>The next section will explain these conditions in more detail and how you can leverage Sandbox Mode to build and test your app before submitting for Live Mode. Once your app is ready to go live and be accessed beyond the restricted users, you will need to submit it for review. Upon approval, your app can be accessed and used by any Instagram user choosing to authenticate.</p>
+<blockquote>
+<h2 id="important">Important</h2>
+<p>Apps created on or after Nov 17, 2015 can take advantage of Sandbox mode right away.
+Apps created before this date will only be able to use Sandbox mode after June 2016, but can still start submitting for review. In June 2016 any app that has not been reviewed and approved will be set to sandbox mode.</p>
+</blockquote>
+<h3 id="sandbox-users">Sandbox Users</h3>
+<p>When you want to start working with the Instagram API Platform, you can register a new app that will start in Sandbox mode. Since this mode is meant for development, apps in Sandbox mode are not visible to the general public, but instead are only visible to a limited set of up to 10 authorized 'sandbox users'. Only these users will be able to test and authenticate your app.</p>
+<p>To manage the list of sandbox users for a given app, you can go to the Sandbox tab in your client configuration screen. There you will be able to add and remove the sandbox users for your app, up to a maximum of 10 users. Note that the admin of the app is always a sandbox user, so you can effectively add up to 9 additional 'sandbox users'.</p>
+<p>After adding users to the list, they will have to accept your invitation before actually becoming sandbox users. To accept the invitation, they can go to the 'Sandbox Invites' button on the top bar of the developer site. In the 'Sandbox Invites' page people can accept or reject invitations, and also stop being sandbox users for a given app.</p>
+<p>Note: a user can become a sandbox user of up to 5 apps. You will not be able to invite someone that is already a test user of 5 apps.</p>
+<h3 id="login-permissions">Login Permissions</h3>
+<p>Now that you have some sandbox users, you can have them go through the authorization flow and generate an access token. The OAuth dialog will display a warning that the app being authorized is in sandbox mode, which is a good reminder that the OAuth dialog will work only for sandbox users. If anyone else tries to authorize your sandbox app, they will see a <code>OAuthForbiddenException</code> error message.</p>
+<p>Apps in sandbox can use any of the <a href="https://www.instagram.com/developer/authorization/">login permissions</a> available. This will allow you to generate access tokens that have any of the scopes required to test the behavior of the API endpoints. While this is great for testing, remember that you still have to go through the <a href="https://www.instagram.com/developer/review">permission review</a> process if you want to be granted the ability to use the permissions when you go live.</p>
+<h3 id="api-behavior">API Behavior</h3>
+<p>The behavior of the API when you are in sandbox mode is the same as when your app is live, but comes with the following restrictions:</p>
+<ul>
+<li>Data is restricted to sandbox users and the 20 most recent media from each sandbox user</li>
+<li>Reduced API <a href="https://www.instagram.com/developer/limits/">rate limits</a></li>
+</ul>
+<p>The first point is important and it means that the API behaves as if the only users on Instagram were your sandbox users, and the only media ever posted were the last 20 for each of these users.</p>
+<p>For example, if you query the <code>/users/{user-id}/</code> endpoint and the <code>{user-id}</code> is a sandbox user, then you will get the normal API response; but if the <code>{user-id}</code> is not a sandbox user, you will get a <code>APINotFound</code> error.</p>
+<p>As another example, let's consider an endpoint that returns a list of media: <code>/tags/{tag-name}/media/recent</code>. The response returned by this endpoint will contain only media with the given tag, as expected. But instead of returning media from any public Instagram user, it will return only media that belongs to your sandbox users, restricted to the last 20 for each user.</p>
+<h3 id="going-live">Going Live</h3>
+<p>After your app has been reviewed and approved, you are ready to make it available to the general public. To switch your client from sandbox to live mode, you can use the button on the top section of the configuration screen for your app. When you are live, any Instagram user will be able to authorize your app, but you will have access only to the permissions that you were granted during the review.</p>
+
+            </section>
+        </div> <!-- .main -->
+    </div> <!-- .main -->
+
+
+            </div> <!-- .page -->
+
+
+            <footer class="page-footer" role="contentinfo">
+                <div class="wrapper">
+                    <nav>
+                        <ul>
+                            <li><a href="https://www.instagram.com/about/us/">Facebookについて</a></li>
+                            <li><a href="http://help.instagram.com/">サポート</a></li>
+                            <li><a href="http://blog.instagram.com/">ブログ</a></li>
+                            <li><a href="http://instagram.com/press/">プレス</a></li>
+                            <li><a href="https://www.instagram.com/developer/">API</a></li>
+                            <li><a href="https://www.instagram.com/about/jobs/">求人</a></li>
+                            <li><a href="https://www.instagram.com/legal/privacy/">プライバシー</a></li>
+                            <li><a href="https://www.instagram.com/legal/terms/">利用規約</a></li>
+                        </ul>
+                    </nav>
+
+                    <p class="copyright">© 2016 Instagram</p>
+                </div>
+            </footer>
+
+
+        <div id="reactModalMountPoint"></div>
+    </div> <!-- .root -->
+
+
+
+
+
+<script type="text/javascript">window._sharedData = {"country_code":"JP","language_code":"ja","gatekeepers":{"rhp":true},"qs":"{\"shift\":10,\"header\":\"LtIYGza9HUOzAIBh9nddlNDOEF22rx3v\",\"edges\":100,\"blob\":\"AQAp3EsVIcCrGKRMXyDVBL0S48dpr6uMF_YNXwFeL-JxdU5VuSeJI9zc_G1DdUuGYTFNKu4x0In3rIHQeOs0sfUHr_e7PhTkkZAFFhM3TvjysgHDil5-_-yBmtwuvrr9mgvAEptJIGg6lBQI_cLX7w5N6ebzcdVdudIB7YQSaXZ75oONcZZiE-mH73SS4Nc0xeMr_e-JMmLTSruWKxFFOo4zTu1fbSv_cRY2647Nd4kk1Q\",\"iterations\":7,\"size\":42}","static_root":"\/\/instagramstatic-a.akamaihd.net\/bluebar\/07a863f","platform":"web","hostname":"www.instagram.com","entry_data":{},"qe":{"su":{"p":{},"g":""}},"display_properties_server_guess":{"viewport_width":360,"pixel_ratio":1.5},"config":{"viewer":null,"csrf_token":"d05880b5de3cd65de8f32ebf6f6f0c44"},"environment_switcher_visible_server_guess":true};</script>
+
+
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1425767024389221');
+fbq('track', 'PageView');
+
+
+</script>
+<noscript>
+
+
+</noscript>
+
+
+    <script type="text/javascript">window._timings.domInteractive = Date.now()</script>
+
+
+</body></html>
